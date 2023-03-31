@@ -1,0 +1,233 @@
+/*root styling*/
+:root {
+    --paragraphs:#222222;
+    --links:#666666;
+    /* --buttons: #37A000; */
+    --buttons: #0076CC;
+    /* --main: #3EA9F5; */
+    --overlay: rgba(0,0,0,0.7);
+}
+
+/* resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* button */
+.button {
+    display: inline-block;
+    background-color: var(--buttons);
+    width: 8rem;
+    padding: 0.8rem 0;
+    border: none;
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.5px solid var(--buttons);
+}
+p{
+    color: var(--links);
+}
+/* centered columns */
+.col-centered {
+    margin: 0 auto;
+}
+
+.green {
+    color: var(--buttons)!important;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #fff!important;
+}
+
+.logo {
+    color: var(--buttons)!important;
+    text-decoration: none;
+    font-size: 1.7em!important;
+    font-weight: bold;
+}
+
+.navbar li>a {
+    font-size: 1.1em!important;
+}
+
+.navbar li a:hover {
+    color:var(--buttons)!important;
+}
+
+
+
+.nav-colored { 
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;  
+}
+
+.nav-transparent { 
+    border-bottom: none;
+}
+
+.intro {
+    padding: 2em 0;
+    overflow: hidden;
+}
+
+.lottie {
+    height: 500px;
+    width: 100%;
+}
+
+/* skills */
+.skills {
+    padding: 2em 0;
+}
+
+.skills i {
+    color: var(--buttons);
+    margin-bottom: 10px;
+}
+
+.about {
+    overflow: hidden;
+}
+
+.boxshadow {
+    border-radius: .5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: .9rem;
+    margin: 2rem auto;
+    width: 150px;
+    min-height: 5rem;
+    overflow: hidden;
+    box-shadow: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear; 
+}
+
+.boxshadow-contact {
+    height:150px;
+    width: 200px;
+    font-size: .9rem;
+    margin: 1rem 0;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--buttons);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.contact-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.boxshadow-contact i {
+    color: var(--buttons);
+}
+
+.hype {
+    margin: 5rem 0 3rem;
+    position: relative;
+    height: 500px;
+    background: url('./images/bg.jpg') no-repeat bottom center/cover;
+    width: 100%;
+    overflow-x: hidden;
+    color: #ffffff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay);
+    color: #ffffff;
+}
+
+.hype-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 860px;
+    font-size: 1.2em;
+    color: #fff!important;
+    padding: 10rem 0 0rem ;
+}
+
+.projects {
+    font-size: 14px;
+}
+
+.card {
+    width: 100%!important;
+    margin-bottom: 1em;
+}
+
+.social-links a {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    margin: 1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.me {
+    padding-top: 4em;
+}
+
+#projects a {
+    color: #4c96ca!important;
+}
+
+a:hover {
+    color: #6da3da!important;
+}
+
+@media screen and (max-width:812px) {
+    .intro-info h1{
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    .intro-info a {
+        margin-top: 1em;
+    }
+
+    .boxshadow-contact {
+        height:150px;
+        width: 200px;
+        font-size: .9rem;
+        margin: 1rem auto;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid var(--buttons);
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+}
